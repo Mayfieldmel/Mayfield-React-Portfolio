@@ -12,6 +12,7 @@ function App() {
 
   // page selection state
   const [pageSelected, setPageSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   // jsx
   return (
@@ -20,6 +21,8 @@ function App() {
         pages={pages}
         pageSelected={pageSelected}
         setPageSelected={setPageSelected}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
       ></Nav>
       <main></main>
       <footer>footer</footer>
