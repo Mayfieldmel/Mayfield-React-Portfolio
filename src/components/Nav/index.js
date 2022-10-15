@@ -8,7 +8,7 @@ function Nav(props) {
   return (
     <header>
       <h1>
-        <a>Melissa Mayfield</a>
+        <a href="/">Melissa Mayfield</a>
       </h1>
       <nav>
         <ul>

@@ -43,7 +43,7 @@ body {
 
 a {
   font-weight: bold;
-  /* color: var(--secondary-color); */
+  color: var(--primary-color);
   text-decoration: none;
   /* border-bottom: 3px solid var(--secondary-color); */
   padding: 5px 10px;
@@ -115,4 +115,34 @@ nav li:hover {
 .navActive {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+}
+
+.portrait {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.about {
+  max-width: 600px;
 }

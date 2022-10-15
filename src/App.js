@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./components/Nav";
+import About from "./components/About";
 
 function App() {
   // page navigation
@@ -24,7 +25,9 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       ></Nav>
-      <main></main>
+      <main>
+        <About></About>
+      </main>
       <footer>footer</footer>
     </div>
   );
