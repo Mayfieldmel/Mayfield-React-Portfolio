@@ -55,6 +55,7 @@ a:hover {
   background-color: var(--primary-color);
 }
 
+/* header */
 header {
   background-image: url("./assets/images/dark-blue-pattern.jpg");
   opacity: .95;
@@ -78,6 +79,7 @@ header h1 {
   display: inline-block;
 }
 
+/* navigation */
 nav {
   padding-bottom: 0;
   margin-top: 80px;
@@ -117,13 +119,6 @@ nav li:hover {
   background-color: var(--secondary-color);
 }
 
-.portrait {
-  max-width: 250px;
-  height: auto;
-  margin-bottom: 20px;
-  border: 2px solid var(--primary-color);
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -136,6 +131,14 @@ nav li:hover {
   flex-wrap: wrap;
 }
 
+/* about me page */
+.portrait {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color);
+}
+
 .about-section {
   display: flex;
   flex-direction: row;
@@ -145,4 +148,19 @@ nav li:hover {
 
 .about {
   max-width: 600px;
+}
+
+.image {
+  max-width: auto;
+  max-height: 200px;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color);
+}
+
+/* Portfolio page */
+.portfolio-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
