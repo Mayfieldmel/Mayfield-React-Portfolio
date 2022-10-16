@@ -166,15 +166,15 @@ nav li:hover {
 }
 
 .image {
-  max-width: 350px;
-  max-height: 350px;
+  width: 350px;
+  height: 200px;
   margin-bottom: 20px;
   border: 2px solid var(--primary-color);
 }
 
 .img {
-  max-width: 350px;
-  max-height: 350px;
+  width: 350px;
+  height: 200px;
   margin-bottom: 20px;
   border: 2px solid var(--primary-color);
   opacity: 0.4;
@@ -201,7 +201,6 @@ nav li:hover {
   left: 12px;
   width: 300px;
   font-size: 14px;
-  /* font-weight: bold; */
 }
 
 .container {

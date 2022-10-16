@@ -1,45 +1,50 @@
 import React, {useState} from "react";
-import Pawfect from "../../assets/images/pawfect-homepage.png";
+import pawfect from "../../assets/images/pawfect-homepage.png";
+import techBlog from "../../assets/images/mayfield-tech-blog-screenshot.png";
+import textEditor from "../../assets/images/text-editor-demo.gif";
+import weatherDash from "../../assets/images/weather-dash.png";
+import noteTaker from "../../assets/images/Mayfield-Note-Taker-Demo.gif";
+import dayPlanner from "../../assets/images/day-planner.gif";
 
 
 function Portfolio() {
    
   const projects = [
     {
-      src: Pawfect,
+      src: pawfect,
       title: "Pawfect Friends",
       tools:
         "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
     },
     {
-      src: Pawfect,
-      title: "Pawfect Friends",
+      src: techBlog,
+      title: "Mayfield Tech Blog",
       tools:
-        "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
+        "HTML/Handlebars, CSS, JavaScript, Node.js, Express.js, MySQL, Sequelize",
     },
     {
-      src: Pawfect,
-      title: "Pawfect Friends",
+      src: textEditor,
+      title: "Mayfield Text Editor",
       tools:
-        "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
+        "Node.js, Express.js, Webpack, IndexedDB",
     },
     {
-      src: Pawfect,
-      title: "Pawfect Friends",
+      src: weatherDash,
+      title: "Weather Dash",
       tools:
-        "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
+        "HTML, CSS, JavaScript",
     },
     {
-      src: Pawfect,
-      title: "Pawfect Friends",
+      src: noteTaker,
+      title: "Mayfield Note Taker",
       tools:
-        "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
+        "Express.js, Node.js",
     },
     {
-      src: Pawfect,
-      title: "Pawfect Friends",
+      src: dayPlanner,
+      title: "Mayfield Day Planner",
       tools:
-        "HTML/Handlebars, CSS/Bulma, JavaScript, Node.js, Express.js, MySQL, Sequelize",
+        "HTML, CSS, JQuery",
     },
   ];
 
@@ -55,14 +60,7 @@ return (
     {projects.map((project) => (
         <div key={project.title} className="container" onMouseEnter={() => {setHover(true); setProjectCard(project); setProjectDetails(true)}}
         onMouseLeave={() => {setHover(false); setProjectCard(project); setProjectDetails(false)}}>
-          {(!hover && projectCard.title === project.title)  ? (
-          <img
-            src={`${project.src}`}
-            alt="Pawfect Friends Homepage"
-            className="image"
-          >
-          </img>
-          ) : (
+          {(hover && projectCard.title === project.title) ? (
             <>
             <img
             src={`${project.src}`}
@@ -75,6 +73,13 @@ return (
             <p className="tools">{project.tools}</p>
           </div>
           </>
+          ) : (
+            <img
+            src={`${project.src}`}
+            alt={`${project.title}`}
+            className="image"
+          >
+          </img>
           )}
         </div>
       ))}
