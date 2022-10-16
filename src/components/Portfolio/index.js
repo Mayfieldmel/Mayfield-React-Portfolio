@@ -55,7 +55,7 @@ return (
     {projects.map((project) => (
         <div key={project.title} className="container" onMouseEnter={() => {setHover(true); setProjectCard(project); setProjectDetails(true)}}
         onMouseLeave={() => {setHover(false); setProjectCard(project); setProjectDetails(false)}}>
-          {!hover ? (
+          {(!hover && projectCard.title === project.title)  ? (
           <img
             src={`${project.src}`}
             alt="Pawfect Friends Homepage"
