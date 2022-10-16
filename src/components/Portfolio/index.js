@@ -45,6 +45,7 @@ function Portfolio() {
 
   const [projectCard, setProjectCard] = useState(projects[0])
   const [projectDetails, setProjectDetails] = useState(false)
+  const [hover, setHover] = useState(false)
 
 //jsx
 return (
@@ -52,37 +53,32 @@ return (
     <h2>Portfolio</h2>
     <div className="portfolio-section">
     {projects.map((project) => (
-        <div key={project.title}>
+        <div key={project.title} className="container" onMouseEnter={() => {setHover(true); setProjectCard(project); setProjectDetails(true)}}
+        onMouseLeave={() => {setHover(false); setProjectCard(project); setProjectDetails(false)}}>
+          {!hover ? (
           <img
             src={`${project.src}`}
             alt="Pawfect Friends Homepage"
-            className={`image ${projectCard.title === project.title && projectDetails && 'image-hover'}`}
-            onMouseEnter={() => {setProjectCard(project); setProjectDetails(true)}}
-            onMouseLeave={() => {setProjectCard(project); setProjectDetails(false)}}
+            className="image"
           >
           </img>
-        </div>
-      ))}
-    </div>
-    
-  <div className="portfolio-section">
-    {projects.map((project) => (
-        <div key={project.title} className="container">
-          <img
+          ) : (
+            <>
+            <img
             src={`${project.src}`}
             alt="Pawfect Friends Homepage"
             className="img"
-            onMouseEnter={() => {setProjectCard(project); setProjectDetails(true)}}
-            onMouseLeave={() => {setProjectCard(project); setProjectDetails(false)}}
           >
           </img>
           <div className="project-details">
             <h3>{project.title}</h3>
             <p className="tools">{project.tools}</p>
           </div>
+          </>
+          )}
         </div>
       ))}
-    </div>
+</div>
 </section>
 )
 }
