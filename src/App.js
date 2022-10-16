@@ -15,6 +15,21 @@ function App() {
   // page selection state
   const [pageSelected, setPageSelected] = useState(false);
   const [currentPage, setCurrentPage] = useState(pages[0]);
+  // const [portfolio, setPortfolio] = useState(false);/
+  // const [contact, setContact] = useState(false);
+  // const [resume, setResume] = useState(false);
+
+  function renderPage(currentPage) {
+    if(currentPage === "Portfolio") {
+      return <Portfolio></Portfolio>
+  //   // } else if(contact) {
+  //   //   return <Contact></Contact>
+  //   // } else if(resume) {
+  //   //   return <Resume></Resume>
+    } else {
+      <About></About>
+    }
+    }
 
   // jsx
   return (
@@ -27,8 +42,11 @@ function App() {
         setCurrentPage={setCurrentPage}
       ></Nav>
       <main>
-        <Portfolio></Portfolio>
-        <About></About>
+        {pageSelected ? (
+          renderPage(currentPage.name)
+        ) : (
+          <About></About>
+        )}
       </main>
       <footer>footer</footer>
     </div>
