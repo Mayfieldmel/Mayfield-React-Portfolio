@@ -5,7 +5,11 @@
 
 @font-face {
   font-family: 'AmaticSC';
-  src: local('AmaticSC'), url('./assets/fonts/AmaticSC/AmaticSC-Bold.ttf') format("truetype");
+  src: local('AmaticSC'), url("./assets/fonts/AmaticSC/AmaticSC-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Bree_Serif';
+  src: local('Bree_Serif'), url("./assets/fonts/Bree_Serif/BreeSerif-Regular.ttf") format("truetype");
 }
 
 body {
@@ -58,7 +62,6 @@ a:hover {
 /* header */
 header {
   background-image: url("./assets/images/dark-blue-pattern.jpg");
-  opacity: .95;
   background-size: cover;
   background-attachment: fixed;
   padding-top: 5px;
@@ -77,6 +80,10 @@ header h1 {
   margin-left: 90px;
   font-size: 50px;
   display: inline-block;
+}
+
+main {
+  font-family: Bree_Serif, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* navigation */
@@ -150,17 +157,64 @@ nav li:hover {
   max-width: 600px;
 }
 
-.image {
-  max-width: auto;
-  max-height: 200px;
-  margin-bottom: 20px;
-  border: 2px solid var(--primary-color);
-}
-
 /* Portfolio page */
 .portfolio-section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.image {
+  max-width: 350px;
+  max-height: 350px;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color);
+}
+
+.img {
+  max-width: 350px;
+  max-height: 350px;
+  margin-bottom: 20px;
+  border: 2px solid var(--primary-color);
+  opacity: 0.4;
+}
+
+.image-hover {
+  background-color: var(--secondary-color);
+  opacity: 0.4;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  z-index: 9999;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.tools {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  width: 300px;
+  font-size: 14px;
+  /* font-weight: bold; */
+}
+
+.container {
+  position: relative;
+}
+
+.topleft {
+  
+  font-size: 18px;
+}
+
+
+
+.hide {
+  display: none;
 }
