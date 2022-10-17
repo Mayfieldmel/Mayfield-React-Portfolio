@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import ContactForm from "./components/Contact";
 
 function App() {
   // page navigation
@@ -15,20 +16,18 @@ function App() {
   // page selection state
   const [pageSelected, setPageSelected] = useState(false);
   const [currentPage, setCurrentPage] = useState(pages[0]);
-  // const [portfolio, setPortfolio] = useState(false);/
-  // const [contact, setContact] = useState(false);
-  // const [resume, setResume] = useState(false);
 
   function renderPage(currentPage) {
     if(currentPage === "Portfolio") {
       return <Portfolio></Portfolio>
-  //   // } else if(contact) {
-  //   //   return <Contact></Contact>
-  //   // } else if(resume) {
+    } else if(currentPage === "Contact") {
+      return <ContactForm></ContactForm>
+    // } else if(resume) {
   //   //   return <Resume></Resume>
     } else {
-      <About></About>
+      return <About></About>
     }
+
     }
 
   // jsx

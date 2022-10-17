@@ -12,13 +12,19 @@ function Nav(props) {
       </h1>
       <nav>
         <ul>
-          {pages.map((page) => (
+            { pageSelected  ? (pages.map((page) => (
             <li className={`${currentPage.name === page.name && pageSelected && 'navActive'}`} key={page.name}>
               <span onClick={() => {setCurrentPage(page); setPageSelected(true)}}>
                 {capitalizeFirstLetter(page.name)}
               </span>
             </li>
-          ))}
+          ))) : (pages.map((page) => (
+            <li className={`${page.name === 'About Me' && 'navActive'}`} key={page.name}>
+              <span onClick={() => {setCurrentPage(page); setPageSelected(true)}}>
+                {capitalizeFirstLetter(page.name)}
+              </span>
+            </li>
+          ))) }
         </ul>
       </nav>
     </header>
