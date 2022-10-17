@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   // page navigation
@@ -22,8 +23,8 @@ function App() {
       return <Portfolio></Portfolio>
     } else if(currentPage === "Contact") {
       return <ContactForm></ContactForm>
-    // } else if(resume) {
-  //   //   return <Resume></Resume>
+    } else if(currentPage === "Resume") {
+      return <Resume></Resume>
     } else {
       return <About></About>
     }
