@@ -44,7 +44,7 @@ function ContactForm() {
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" onSubmit={handleSubmit} className="contact-form">
         {/* name input */}
-        <div className="flex-row">
+        <div className="flex-column">
           <label htmlFor="name" className="contact-label">Name:</label>
           <input
             type="text"
@@ -56,18 +56,18 @@ function ContactForm() {
           />
         </div>
         {/* email input */}
-        <div className="flex-row">
-          <label htmlFor="email" className="label-email">Email address:</label>
+        <div className="flex-column">
+          <label htmlFor="email" className="contact-label">Email address:</label>
           <input
             type="email"
             defaultValue={email}
             onBlur={handleChange}
             name="email"
-            className="contact-email"
+            className="contact-textarea"
           />
         </div>
         {/* message text area */}
-        <div className="flex-row">
+        <div className="flex-column">
           <label htmlFor="message" className="contact-label">Message:</label>
           <textarea
             name="message"

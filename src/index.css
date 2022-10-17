@@ -240,23 +240,25 @@ nav li:hover {
 }
 
 .contact-label {
-  padding: 15px;
+  padding: 5px 15px;
   margin-right: 30px;
 }
 
+.contact-textarea {
+  margin: 5px 15px
+  }
+
 .btn {
   margin: 15px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 5px;
+  border-radius: 20%;
+  border: 2px solid var(--primary-color);
 }
 
-.contact-textarea {
-margin: 15px
+.btn:hover {
+  text-decoration: underline;
+  opacity: .6;
 }
 
-.contact-email {
-margin: 15px 5px
-}
-
-.label-email {
-  padding: 15px;
-  margin-right: 5px;
-}
