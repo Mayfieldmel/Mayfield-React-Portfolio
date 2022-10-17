@@ -262,3 +262,17 @@ nav li:hover {
   opacity: .6;
 }
 
+/* footer */
+footer {
+display: flex;
+justify-content: center;
+}
+
+.footer-icon {
+  max-width: 30px;
+  max-height: auto; 
+}
+
+.footer-icon:hover {
+  opacity: .5;
+}

@@ -6,8 +6,7 @@ function Resume() {
     <section>
       <h2>Resume</h2>
       <p>
-        To download my resume, click
-        <a href={`${resume}`}>here</a>
+        To download my resume,<a href={`${resume}`}>click here</a>
       </p>
       <h3>Front-End Proficiencies</h3>
       <ul>
