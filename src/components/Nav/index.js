@@ -4,6 +4,9 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Nav(props) {
   const { pages, pageSelected, setPageSelected, currentPage, setCurrentPage } =
     props;
+   function title() { document.title = "Melissa Mayfield" }
+//    function title() { document.title = capitalizeFirstLetter(currentPage.name); }
+   title()
   // jsx
   return (
     <header>
