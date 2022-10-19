@@ -6,7 +6,7 @@ function About() {
     <section className="about-section">
       <img
         className="portrait"
-        src={require("../../assets/images/crop-selfie.jpg").default}
+        src={require("../../assets/images/MeJadeWedding-cropped.jpg").default}
         alt="Melissa Mayfield and her winning smile"
       />
       <div className="flex-column">
