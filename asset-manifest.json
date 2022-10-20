@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Mayfield-React-Portfolio/static/css/main.2bcaf8dd.chunk.css",
-    "main.js": "/Mayfield-React-Portfolio/static/js/main.158ca12c.chunk.js",
-    "main.js.map": "/Mayfield-React-Portfolio/static/js/main.158ca12c.chunk.js.map",
+    "main.js": "/Mayfield-React-Portfolio/static/js/main.e022f599.chunk.js",
+    "main.js.map": "/Mayfield-React-Portfolio/static/js/main.e022f599.chunk.js.map",
     "runtime-main.js": "/Mayfield-React-Portfolio/static/js/runtime-main.8256323b.js",
     "runtime-main.js.map": "/Mayfield-React-Portfolio/static/js/runtime-main.8256323b.js.map",
     "static/js/2.0bcb68cf.chunk.js": "/Mayfield-React-Portfolio/static/js/2.0bcb68cf.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.8256323b.js",
     "static/js/2.0bcb68cf.chunk.js",
     "static/css/main.2bcaf8dd.chunk.css",
-    "static/js/main.158ca12c.chunk.js"
+    "static/js/main.e022f599.chunk.js"
   ]
 }
