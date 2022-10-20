@@ -1,6 +1,6 @@
 # Mayfield React Portfolio
 
-This repo houses the code used to build the Mayfield Tech Blog available at https://mayfieldmel.github.io/Mayfield-React-Portfolio/.
+This repo houses the code used to build the Mayfield React Portfolio available at https://mayfieldmel.github.io/Mayfield-React-Portfolio/.
 
 ![Mayfield-react-portfolio-screenshot](./assets/images/mayfield-react-portfolio-screenshot.png)
 
