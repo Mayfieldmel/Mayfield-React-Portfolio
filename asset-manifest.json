@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/mayfield-react-portfolio/static/css/main.7d4a4a57.chunk.css",
-    "main.js": "/mayfield-react-portfolio/static/js/main.0dde633d.chunk.js",
-    "main.js.map": "/mayfield-react-portfolio/static/js/main.0dde633d.chunk.js.map",
+    "main.css": "/mayfield-react-portfolio/static/css/main.b7f0c916.chunk.css",
+    "main.js": "/mayfield-react-portfolio/static/js/main.158ca12c.chunk.js",
+    "main.js.map": "/mayfield-react-portfolio/static/js/main.158ca12c.chunk.js.map",
     "runtime-main.js": "/mayfield-react-portfolio/static/js/runtime-main.72991c2a.js",
     "runtime-main.js.map": "/mayfield-react-portfolio/static/js/runtime-main.72991c2a.js.map",
     "static/js/2.0bcb68cf.chunk.js": "/mayfield-react-portfolio/static/js/2.0bcb68cf.chunk.js",
@@ -10,12 +10,12 @@
     "static/js/3.c8df48fe.chunk.js": "/mayfield-react-portfolio/static/js/3.c8df48fe.chunk.js",
     "static/js/3.c8df48fe.chunk.js.map": "/mayfield-react-portfolio/static/js/3.c8df48fe.chunk.js.map",
     "index.html": "/mayfield-react-portfolio/index.html",
-    "static/css/main.7d4a4a57.chunk.css.map": "/mayfield-react-portfolio/static/css/main.7d4a4a57.chunk.css.map",
+    "static/css/main.b7f0c916.chunk.css.map": "/mayfield-react-portfolio/static/css/main.b7f0c916.chunk.css.map",
     "static/js/2.0bcb68cf.chunk.js.LICENSE.txt": "/mayfield-react-portfolio/static/js/2.0bcb68cf.chunk.js.LICENSE.txt",
     "static/media/index.css": "/mayfield-react-portfolio/static/media/dark-blue-pattern.71b429e2.jpg",
     "static/media/Mayfield IT Resume 2022.b8e8e68d.docx": "/mayfield-react-portfolio/static/media/Mayfield IT Resume 2022.b8e8e68d.docx",
     "static/media/Mayfield-Note-Taker-Demo.cd9d18d9.gif": "/mayfield-react-portfolio/static/media/Mayfield-Note-Taker-Demo.cd9d18d9.gif",
-    "static/media/crop-selfie.jpg": "/mayfield-react-portfolio/static/media/crop-selfie.e4789877.jpg",
+    "static/media/MeJadeWedding-cropped.jpg": "/mayfield-react-portfolio/static/media/MeJadeWedding-cropped.926ab871.jpg",
     "static/media/day-planner.5b3f62cd.gif": "/mayfield-react-portfolio/static/media/day-planner.5b3f62cd.gif",
     "static/media/mayfield-tech-blog-screenshot.86d56211.png": "/mayfield-react-portfolio/static/media/mayfield-tech-blog-screenshot.86d56211.png",
     "static/media/pawfect-homepage.8f7873d5.png": "/mayfield-react-portfolio/static/media/pawfect-homepage.8f7873d5.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.72991c2a.js",
     "static/js/2.0bcb68cf.chunk.js",
-    "static/css/main.7d4a4a57.chunk.css",
-    "static/js/main.0dde633d.chunk.js"
+    "static/css/main.b7f0c916.chunk.css",
+    "static/js/main.158ca12c.chunk.js"
   ]
 }
